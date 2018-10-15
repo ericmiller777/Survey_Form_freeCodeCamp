@@ -1,0 +1,2 @@
+body{background-color:#add8e6;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 5fr 5fr 1fr;grid-template-areas:"header header header header" ". form form ." ". form form ." "footer footer footer footer"}header{grid-area:header}.form-div{background-color:#fff;grid-area:form;box-shadow:10px 10px 8px;display:grid;grid-template-rows:1fr 10fr;justify-items:center}h1{text-align:center}.survey-summary{text-align:center}
+/*# sourceMappingURL=main.min.css.map */

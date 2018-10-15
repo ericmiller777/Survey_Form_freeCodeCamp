@@ -1,8 +1,35 @@
-$blueblue: blue;
+$font-size: 25px;
+$background-color: lightblue;
+$form-div-background: white;
 
 body{
-    background-color: $blueblue;
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        ". form form ."
+        ". form form ."
+        "footer footer footer footer";
 }
+
+header{
+    grid-area: header;
+}
+.form-div{
+    background-color: $form-div-background;
+    grid-area: form;
+    box-shadow: 10px 10px 8px;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    justify-items: center;
+}
+
 h1{
-    font-size: 500px;
+    text-align: center;
+}
+
+.survey-summary{
+    text-align: center;
 }
