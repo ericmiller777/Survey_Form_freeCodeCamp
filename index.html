@@ -7,19 +7,43 @@
 </head>
 <body>
 <header>
-    <h1 id="title">Survey</h1>
+    <h1 id="title">MMO Preference Survey</h1>
 </header>
 <div class="form-div">
         <p id="description" class="survey-summary">Thank you for....</p>
 <form id=survey-form>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-      </div>
-      <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="email" name="user_mail">
-      </div>
+        <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Your name here." />
+        <label id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="default@example.com" />
+        <label id="number-label">Age:</label>
+        <input type="number" id="number" min="1" max="177" placeholder="1-177 no infants, no immortals." />
+        <label type="text">Which MMO do you prefer:</label>
+        <select id="dropdown">
+            <option value="FFXI">FFXI</option>
+            <option value="FFXIV">FFXIV</option>
+            <option value="WoW">WoW</option>
+        </select>
+        <label type="text">Keyboard or Controller?</label>
+        <div id=radio-button-group>
+            <label for="keyboard">Keyboard</label>
+            <input id="keyboard" type="radio" name="input_preference" checked />
+            <label for="controller">Controller</label>
+            <input id="controller" type="radio" name="input_preference" />
+            <label for="other">Other</label>
+            <input id="other" type="radio" name="input_preference" />
+        </div>
+        <label type="text">Who do you play with?</label>
+        <div id="checkbox-group">
+            <label for="alone">I play alone :(</label>
+            <input id="alone" type="checkbox"checked />
+            <label for="spouse">I play with my spouse.</label>
+            <input id="controller" type="checkbox" />
+            <label for="friends">I play with my friends.</label>
+            <input id="friends" type="checkbox" />
+            <label for="other">Other</label>
+            <input id="other" type="checkbox" />
+        </div>
 </form>
 </div>
 <script>

@@ -1,16 +1,17 @@
 $font-size: 25px;
-$background-color: lightblue;
-$form-div-background: white;
+$dark-indigo: #49599a;
+$medium-indigo: #7986cb;
+$light-indigo: #aab6fe;
 
 body{
-    background-color: $background-color;
+    background-color: $medium-indigo;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr 5fr 1fr;
     grid-template-areas:
         "header header header header"
-        ". form form ."
-        ". form form ."
+        ". form-div form-div ."
+        ". form-div form-div ."
         "footer footer footer footer";
 }
 
@@ -18,12 +19,49 @@ header{
     grid-area: header;
 }
 .form-div{
-    background-color: $form-div-background;
-    grid-area: form;
+    background-color: $light-indigo;
+    grid-area: form-div;
     box-shadow: 10px 10px 8px;
-    display: grid;
-    grid-template-rows: 1fr 10fr;
     justify-items: center;
+    border-radius: 10%;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 15px;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+ 
+input,
+select,
+#radio-button-group,
+#checkbox-group,
+button {
+    grid-column: 2 / 3;
+    width: 50%;
+}
+
+#radio-button-group{
+    display: flex;
+    flex-direction: row;
+}
+
+#checkbox-group{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#email:invalid{
+    border: 3px solid red;
+}
+#number:invalid{
+    border: 3px solid red;
 }
 
 h1{
