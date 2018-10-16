@@ -2,11 +2,12 @@ $font-size: 25px;
 $dark-indigo: #49599a;
 $medium-indigo: #7986cb;
 $light-indigo: #aab6fe;
+$checkbox-indigo: #dde8ff;
 
 body{
     background-color: $medium-indigo;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 5fr 5fr 1fr;
     grid-template-areas:
         "header header header header"
@@ -53,8 +54,13 @@ button {
 
 #checkbox-group{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+#textarea{
+    width: 50%;
 }
 
 #email:invalid{

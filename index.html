@@ -33,17 +33,20 @@
             <label for="other">Other</label>
             <input id="other" type="radio" name="input_preference" />
         </div>
-        <label type="text">Who do you play with?</label>
+        <label type="text">Who do you play with?<br>(Check all that apply)</label>
         <div id="checkbox-group">
-            <label for="alone">I play alone :(</label>
-            <input id="alone" type="checkbox"checked />
-            <label for="spouse">I play with my spouse.</label>
+            <label id="alone-label" for="alone">I play alone :(</label>
+            <input id="alone" type="checkbox" />
+            <label id="spouse-label" for="spouse">I play with my spouse.</label>
             <input id="controller" type="checkbox" />
-            <label for="friends">I play with my friends.</label>
+            <label id="friends-label"for="friends">I play with my friends.</label>
             <input id="friends" type="checkbox" />
-            <label for="other">Other</label>
+            <label id="other-label"for="other">Other</label>
             <input id="other" type="checkbox" />
         </div>
+        <label type="text">Additional Comments:</label>
+        <textarea id="textarea" placeholder="Leave comments here"></textarea>
+        <button id="submit">Submit</button>
 </form>
 </div>
 <script>
