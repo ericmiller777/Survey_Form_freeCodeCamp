@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/css/main.min.css" type="text/css" >
+</head>
+<body>
+<header>
+    <h1 id="title">MMO Preference Survey</h1>
+</header>
+<div class="form-div">
+        <p id="description" class="survey-summary">Thank you for your time.</p>
+<form id=survey-form>
+        <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Your name here." required="required" />
+        <label id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="default@example.com" required="required" />
+        <label id="number-label">Age:</label>
+        <input type="number" id="number" min="1" max="177" placeholder="Age" />
+        <label id="dropdown-label" type="text">Which MMO do you prefer:</label>
+        <select id="dropdown">
+            <option value="FFXI">FFXI</option>
+            <option value="FFXIV">FFXIV</option>
+            <option value="WoW">WoW</option>
+        </select>
+        <label id="control-type-label" type="text">Keyboard or Controller?</label>
+        <div id=radio-button-group>
+            <label for="keyboard">Keyboard</label>
+            <input id="keyboard" type="radio"value="keyboard" name="input_preference" checked />
+            <label for="controller">Controller</label>
+            <input id="controller" type="radio" value="controller" name="input_preference" />
+            <label for="other">Other</label>
+            <input id="other" type="radio" value="other" name="input_preference" />
+        </div>
+        <label id="coop-label" type="text">Who do you play with?<br>(Check all that apply)</label>
+        <div id="checkbox-group">
+            <label id="alone-label" for="alone">I play alone :(</label>
+            <input id="alone" value="alone" type="checkbox" />
+            <label id="spouse-label" for="spouse">I play with my spouse.</label>
+            <input id="spouse" value="spouse" type="checkbox" />
+            <label id="friends-label"for="friends">I play with my friends.</label>
+            <input id="friends" value="friends" type="checkbox" />
+            <label id="other-label"for="other">Other</label>
+            <input id="other" value="other" type="checkbox" />
+        </div>
+        <label id="comments-label" type="text">Additional Comments:</label>
+        <textarea id="textarea" placeholder="Leave comments here"></textarea>
+        <button id="submit">Submit</button>
+</form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+</script>
+</body>
+</html>
